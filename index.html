@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="Sathish">
+	<meta name="Keywords" content="Bookmyshow">
+	<meta name="Description" content="Internship">
+	<link rel="icon" href="images/fav.ico" type="image/x-icon">
+	<!-- Latest compiled and minified CSS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/javascript.js"></script>
+	<title>Book My Show</title>
+</head>
+
+<body>
+	<!-- template start  -->
+	<div class="container-fluid">
+
+		<!-- nav bar  -->
+		<div class="cls-navbarcontain">
+			<div class="container cls-container">
+				<nav class="navbar navbar-inverse cls-navinverse">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-label="but">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a href="javascript:;" class="navbar-brand cls-navbarbrand" alt="link" title="Home"><i class="fa fa-home"
+									aria-hidden="true"></i></a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav cls-navleft">
+								<li><a href="javascript:;" title="experiences" alt="link ">experiences</a></li>
+								<li><a href="javascript:;" title="movie" alt="link ">movies</a></li>
+								<li><a href="javascript:;" title="Events" alt="link">Events</a></li>
+								<li><a href="javascript:;" title="play" alt="link">Plays</a></li>
+								<li><a href="javascript:;" title="sports" alt="link">Sports</a></li>
+								<li><a href="javascript:;" title="trailer" alt="link">Trailer</a></li>
+								<li><a href="javascript:;" title="iccmatch" alt="link">ICC world t20 india</a>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><button type="button" class="btn btn-danger cls-btn">WE'RE HIRING</button></li>
+								<li><a href="javascript:;" title="offers" alt="link">offers</a></li>
+								<li><a href="javascript:;" title="giftcard" alt="link">giftcard</a></li>
+								<li><a href="javascript:;" title="support" alt="link"> Support </a></li>
+								<li><span class="badge">3</span></li>
+								<li><a href="javascript:;" title="support" alt="link" id="notify"
+										onclick="opens()"><span class="fa fa-bell-o"></a></span></li>
+								<li><a href="javascript:;" title="signin" alt="link" onclick="shows()"> Sign In</a></li>
+								<li><a href="javascript:;" title="chennai" alt="link"><span
+											class="fa fa-map-marker"></span> Chennai</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!-- nav bar end  -->
+
+		<!-- sign in form  -->
+		<div id="id01" class="modal">
+			<div class="cls-get">
+				<div class="cls-started " id="clsone">
+					<h2><span>Get Started</span><a href="javascript:;" alt="close" title="closed"><i class="fa fa-times" aria-hidden="true" onclick="closes()"></i></a></h2>
+					<button><img src="images/google.png" alt="google"> Continue with Google</button>
+					<button><i class="fa fa-envelope" aria-hidden="true"></i> Continue with Email</button>
+					<button><i class="fa fa-apple" aria-hidden="true"></i> Continue with Apple</button>
+					<p>OR</p>
+					<div class="cls--india">
+						<span><img src="images/download.png" alt="indiaa"> +91 <input type="text"
+								placeholder="Continue with mobile number" autocomplete="off" maxlength="15"
+								onkeypress="return restrictAlphabets(event)" id="mobile" value=""></span>
+						<button class="cls-login" type="submit" id="login">Login</button>
+						<p><input type="checkbox"> I agree to the <a href="javascript:;" alt="link">Terms &
+								Conditions</a> & <a href="javascript:;" alt="link">Privacy policy</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- sign end  -->
+
+
+		<!-- banner  -->
+		<div class="cls-bookmshow">
+			<div class="container cls-contain">
+				<div class="cls-mcarosel">
+					<div class="cls-bannerbg">
+						<div class="row">
+							<div class="col-sm-12 ">
+								<img src="images/logo1.png" alt="logo">
+								<a href="javascript:;" alt="link" title="bookmyshow"><i class="fa fa-trophy"
+										aria-hidden="true"></i>Best offer <span class="cls-year"></span></a>
+							</div>
+						</div>
+					</div>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner cls-carosel">
+							<div class="item active">
+								<div class="row">
+									<div class="col-sm-12">
+										<img src="images/payu.png" alt="pay">
+									</div>
+								</div>
+								<div class="row">
+									<div class="cls-cashback">
+										<div class="col-sm-12">
+											<h2>Gets our <span>5%</span> cashback on ever booking on BookMyShow</h2>
+											<h3>Just select<img src="images/payu.png" alt="pay"> and pay through our
+												regular
+												payment methods</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-sm-12">
+										<img src="images/payu.png" alt="image">
+									</div>
+								</div>
+								<div class="row">
+									<div class="cls-cashback">
+										<div class="col-sm-12">
+											<h2>Gets our <span>5%</span> cashback on ever booking on BookMyShow</h2>
+											<h3>Just select<img src="images/payu.png" alt="image"> and pay through our
+												regular
+												payment
+												methods</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-sm-12">
+										<img src="images/payu.png" alt="pay">
+									</div>
+								</div>
+								<div class="row">
+									<div class="cls-cashback">
+										<div class="col-sm-12">
+											<h2>Gets our <span>5%</span> cashback on ever booking on BookMyShow</h2>
+											<h3>Just select<img src="images/payu.png" alt="pay"> and pay through our
+												regular payyment
+												methods</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- drop down  -->
+					<div class="row">
+						<div class="col-sm-12 cls-cinemas">
+							<div class="dropdown">
+								<button class="btn btn-primary dropdown-toggle cls-drop" type="button"
+									data-toggle="dropdown" id="menu"><img src="images/all.JPG" alt="no-image">ALL
+									<button class="btn btn-primary dropdown-toggle cls-drop angle" type="button"
+										data-toggle="dropdown" aria-label="All"><span class="fa fa-angle-down"></span></button>
+								</button>
+								<ul class="dropdown-menu cls-menu">
+									<li><a href="javascript:;" alt="link" title="movie"><img src="images/movies.JPG"
+												alt="no-image">movies</a></li>
+									<li><a href="javascript:;" alt="link" title="events"><img src="images/events.JPG"
+												alt="no-image">events</a></li>
+									<li><a href="javascript:;" alt="link" title="plays"><img src="images/plays.JPG"
+												alt="no-image">plays</a></li>
+									<li><a href="javascript:;" alt="link" title="sports"><img src="images/sports.JPG"
+												alt="no-image">sports</a></li>
+								</ul>
+							</div>
+							<input type="text" class="form-control cls-form" id="name" autocomplete="off"
+								placeholder="  Book Ticket For Movies,Events,Plays & Sports">
+							<span class="cls-spa"><a href="javascript:;" alt="link" title="search"><i
+										class="fa fa-th-list" aria-hidden="true"></i></a></span>
+							<h4>In Cinemas : chennai, PVR : Ampa, chennai, <a href="javascript:;" alt="link"
+									title="link" class="cls-ags">AGS Cinemas OMR: Navlur</a></h4>
+						</div>
+					</div>
+					<!-- drop downn end  -->
+
+				</div>
+			</div>
+		</div>
+		<!-- banner end  -->
+		<!-- notification form  -->
+		<div class="container">
+			<div class="cls-notify" id="note">
+				<p>notifications</p>
+				<div class="cls-leo ">
+					<a href="javascript:;" title="Leo" id="hideee" alt="link"><img src="images/img1.jpeg" class="img-circle"
+							alt="no-image">Today 6.00pm First Track</a>
+				</div>
+				<div class="cls-ps2">
+					<a href="javascript:;" title="PS-2" alt="link"><img src="images/img2.jpeg" class="img-circle"
+							alt="no-image">Cholas Era !!!!</a>
+				</div>
+				<div class="cls-ayalan">
+					<a href="javascript:;" title="Ayalan" alt="link"><img src="images/img3.jpeg" class="img-circle"
+							alt="no-image">watch 3D experience</a>
+				</div>
+				<button>Close</button>
+			</div>
+		</div>
+		<!-- notify form end  -->
+		<div class="cls-events">
+			<h3>Featured Events<span></span></h3>
+		</div>
+		<!-- snow  -->
+		<div class="cls-snow">
+			<div class="container">
+				<div class="cls-magicshow">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="cls-kindom">
+								<img src="images/event1.jpg" alt="no-image">
+							</div>
+							<div class="cls-city">
+								<span class="cls-dates"> Feb 13 -31 Mar</span>
+								<h5>Snow kingdom<span>Chennai</span></h5>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="cls-kindom">
+								<img src="images/event2.jpg" alt="no-image">
+							</div>
+							<div class="cls-city">
+								<span class="cls-dates">Mar 11- 19</span>
+								<h5>Laugh OK please<span>Multi-city</span></h5>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="cls-kindom">
+								<img src="images/event3.jpg" alt="no-image">
+							</div>
+							<div class="cls-city">
+								<span class="cls-dates"> May 5 -June 5</span>
+								<h5>World Famous Magician<span>Chennai</span></h5>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="cls-kindom">
+								<img src="images/event4.webp" alt="no-image">
+							</div>
+							<div class="cls-city">
+								<span class="cls-dates"> Mar 26</span>
+								<h5>DJ BL3ND<span>Chennai</span></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- snow ennd  -->
+		<!-- top movies-->
+		<div class="cls-topmovies">
+			<div class="container">
+				<div class="cls-movieslist">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="cls-heart">
+								<h4>Top Movies</h4>
+								<a href="index1.html" alt="link" title="KKP"><i class="fa fa-heart"
+										aria-hidden="true"></i><span>72% </span>kadhalum kadhanthu pogum</a>
+								<a href="index1.html" alt="link" title="pichaikaran"><i class="fa fa-heart"
+										aria-hidden="true"></i><span>78% </span>Pichaikaran (U)</a>
+								<a href="index1.html" alt="link" title="Zootopia"><i class="fa fa-heart"
+										aria-hidden="true"></i><span>89% </span>Zootopia (3D) (U)</a>
+								<a href="index1.html" alt="link" title="mapla singam"><i class="fa fa-heart"
+										aria-hidden="true"></i><span>62% </span>Mapla singam (U)</a>
+								<a href="index1.html" alt="link" title="sethupathi"><i class="fa fa-heart"
+										aria-hidden="true"></i><span>78%</span>Sethpathi (U)</a>
+								<a href="index1.html" alt="link" title="The Revenant"><i class="fa fa-heart"
+										aria-hidden="true"></i><span>85% </span>The Revenant (A)</a>
+								<a href="index1.html" alt="link" title="Kshanam"><i class="fa fa-heart"
+										aria-hidden="true"></i><span>81% </span>Kshanam (U/A)</a>
+								<a href="index1.html" alt="link" title="kalanam"><i class="fa fa-heart"
+										aria-hidden="true"></i><span>72% </span>kalanam Vaibogamae (U)</a>
+								<a href="index1.html" alt="link" title="Aviyal"><i class="fa fa-heart"
+										aria-hidden="true"></i><span>64% </span>Aviyal (U/A)</a>
+								<a href="index1.html" alt="link" title="Neerja"><i class="fa fa-heart"
+										aria-hidden="true"></i><span>83% </span>Neerja (U)</a>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class="cls-foryou">
+								<div class="row">
+									<div class="col-sm-3">
+										<div class="cls-just">
+											<span>JUST FOR YOU</span>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="cls-just">
+											<button onclick="showing()" id="load" class="cls-but1 active">Now
+												showing</button>
+											<button class="cls-but2" onclick="soon()" id="come">Coming Soon</button>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="cls-just">
+											<a href="javascript:;" title="viewmore" alt="link">View More</a>
+										</div>
+									</div>
+								</div>
+								<div class="row" id="bigil">
+									<div class="col-sm-12">
+										<div class="cls-booknow">
+											<div id="myCarousel1" class="carousel slide" data-ride="carousel">
+												<!-- Indicators -->
+
+												<!-- Wrapper for slides -->
+												<div class="carousel-inner">
+													<div class="item active">
+														<div class="row">
+															<div class="cls-aagam">
+																<div class="col-sm-offset-1 col-sm-3">
+																	<a href="index1.html" alt="link" title="Aagam"><img src="images/movie1.JPG"
+																			alt="no-image"></a>
+																	<div class="cls-tamil">
+																		<h5>Aagam</h5>
+																		<p>Tamil</p>
+																		<span>DRAMA</span>
+																		<a href="index1.html" alt="link"
+																			title="booknow"><button>BOOK
+																				now</button></a>
+																	</div>
+																</div>
+																<div class=" col-sm-3">
+																	<a href="index1.html" alt="link" title="Pugazh"><img src="images/movie2.JPG"
+																			alt="no-image"></a>
+																	<div class="cls-tamil">
+																		<h5>Pugazh</h5>
+																		<p>Tamil</p>
+																		<span>Action</span><span>DRAMA</span><span>romance</span>
+																		<a href="index1.html" alt="link"
+																			title="booknow"><button>BOOK
+																				now</button></a>
+																	</div>
+																</div>
+																<div class=" col-sm-3 ">
+																	<a href="index1.html" alt="link" title="Sawari"><img src="images/movie3.JPG"
+																			alt="no-image"></a>
+																	<div class="cls-tamil">
+																		<h5>Sawaari</h5>
+																		<p>Tamil</p>
+																		<span>Action</span>
+																		<span>Thriller</span>
+																		<a href="index1.html" alt="link"
+																			title="booknow"><button>BOOK
+																				now</button></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item">
+														<div class="row">
+															<div class="cls-aagam">
+																<div class="col-sm-offset-1 col-sm-3">
+																	<a href="index1.html" alt="link" title="viswasam"><img src="images/movie4.jpeg"
+																			alt="no-image"></a>
+																	<div class="cls-tamil">
+																		<h5>Viswasam</h5>
+																		<p>Tamil</p>
+																		<span>DRAMA</span>
+																		<a href="index1.html" alt="link"
+																			title="booknow"><button>BOOK
+																				now</button></a>
+																	</div>
+																</div>
+																<div class=" col-sm-3">
+																	<a href="index1.html" alt="link" title="Bigil"><img src="images/movie5.webp"
+																			alt="no-image"></a>
+																	<div class="cls-tamil">
+																		<h5>Bigil</h5>
+																		<p>Tamil</p>
+																		<span>Action</span><span>DRAMA</span><span>romance</span>
+																		<a href="index1.html" alt="link"
+																			title="booknow"><button>BOOK
+																				now</button></a>
+																	</div>
+																</div>
+																<div class=" col-sm-3 ">
+																	<a href="index1.html" alt="link" title="Kadaram"><img src="images/movie6.jpg"
+																			alt="no-image"></a>
+																	<div class="cls-tamil">
+																		<h5>Kadaram Kondan</h5>
+																		<p>Tamil</p>
+																		<span>Action</span>
+																		<span>Thriller</span>
+																		<a href="index1.html" alt="link"
+																			title="booknow"><button>BOOK
+																				now</button></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<!-- Left and right controls -->
+												<a class="left carousel-control cls-left" href="#myCarousel1"
+													data-slide="prev">
+													<span class="fa fa-angle-left"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="right carousel-control cls-right" href="#myCarousel1"
+													data-slide="next">
+													<span class="fa fa-angle-right"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row" id="hollywood">
+									<div class="col-sm-12">
+										<div class="cls-booknow">
+											<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+												<!-- Indicators -->
+
+												<!-- Wrapper for slides -->
+												<div class="carousel-inner">
+													<div class="item active">
+														<div class="row">
+															<div class="cls-aagam">
+																<div class="col-sm-offset-1 col-sm-3">
+																	<a href="index1.html" alt="Gamer" title="english"><img src="images/movie7.jpg"
+																			alt="no-image"></a>
+																	<div class="cls-tamil">
+																		<h5>Holidays</h5>
+																		<p>English</p>
+																		<span>DRAMA</span>
+																		<a href="index1.html" alt="link"
+																			title="booknow"><button>BOOK
+																				now</button></a>
+																	</div>
+																</div>
+																<div class=" col-sm-3">
+																	<a href="index1.html" alt="Gamer" title="english"><img src="images/movie8.jpg"
+																			alt="no-image"></a>
+																	<div class="cls-tamil">
+																		<h5>Ender</h5>
+																		<p>English</p>
+																		<span>Action</span><span>DRAMA</span><span>romance</span>
+																		<a href="index1.html" alt="link"
+																			title="booknow"><button>BOOK
+																				now</button></a>
+																	</div>
+																</div>
+																<div class=" col-sm-3 ">
+																	<a href="index1.html" alt="Gamer" title="english"><img src="images/movie9.jpg"
+																			alt="no-image"></a>
+																	<div class="cls-tamil">
+																		<h5>Gamer</h5>
+																		<p>English</p>
+																		<span>Action</span>
+																		<span>Thriller</span>
+																		<a href="index1.html" alt="link"
+																			title="booknow"><button>BOOK
+																				now</button></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="item">
+														<div class="row">
+															<div class="cls-aagam">
+																<div class="col-sm-offset-1 col-sm-3">
+																	<a href="index1.html" alt="Gamer" title="english"><img src="images/movie10.jpg"
+																			alt="no-image"></a>
+																	<div class="cls-tamil">
+																		<h5>Hard Kill</h5>
+																		<p>English</p>
+																		<span>DRAMA</span>
+																		<a href="index1.html" alt="link"
+																			title="booknow"><button>BOOK
+																				now</button></a>
+																	</div>
+																</div>
+																<div class=" col-sm-3">
+																	<a href="index1.html" alt="Gamer" title="english"><img src="images/movie11.jpg"
+																			alt="no-image"></a>
+																	<div class="cls-tamil">
+																		<h5>Titanic</h5>
+																		<p>English</p>
+																		<span>Action</span><span>DRAMA</span><span>romance</span>
+																		<a href="index1.html" alt="link"
+																			title="booknow"><button>BOOK
+																				now</button></a>
+																	</div>
+																</div>
+																<div class=" col-sm-3 ">
+																	<a href="index1.html" alt="Gamer" title="english"><img src="images/movie12.jpg"
+																			at="no-image"></a>
+																	<div class="cls-tamil">
+																		<h5>Harry potter</h5>
+																		<p>English</p>
+																		<span>Action</span>
+																		<span>Thriller</span>
+																		<a href="index1.html" alt="movie"><button>BOOK
+																				now</button></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<!-- Left and right controls -->
+												<a class="left carousel-control cls-left" href="#myCarousel2"
+													data-slide="prev">
+													<span class="fa fa-angle-left"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="right carousel-control cls-right" href="#myCarousel2"
+													data-slide="next">
+													<span class="fa fa-angle-right"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- tip movies end  -->
+		<!-- handpicked start  -->
+		<div class="cls-handpick">
+			<div class="cls-experience">
+				<img src="images/bookmark.JPG" alt="no-image">
+				<h1>Handpick Your<span> Experience</span></h1>
+				<p>Discover Events , handpicked by us , just for you</p>
+			</div>
+		</div>
+		<!-- handpick end   -->
+		<!-- treasure  -->
+		<div class="cls-treasure">
+			<div class="container">
+				<div class="cls-carosel-treasure">
+					<div id="myCarousel3" class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="row">
+									<div class="col-sm-3">
+										<div class="cls-known">
+											<img src="images/img3.jpg" alt="no-image">
+										</div>
+										<div class="cls-grove">
+											<h3>Grove to Learn?</h3>
+											<p>grove doesn't stop in school<span>7 EVENTS</span></p>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="cls-learn">
+											<img src="images/img2.jpg" alt="no-image">
+										</div>
+										<div class="cls-little">
+											<h3>little-known treasures</h3>
+											<p>Your's city best-kept secrets<span>11 EVENTS</span></p>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="cls-editor">
+											<img src="images/img1.jpg" alt="no-image">
+										</div>
+										<div class="cls-littlenext">
+											<h3>The Editor Recommended</h3>
+											<p>The best of the best<span>11 EVENTS</span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="row">
+									<div class="col-sm-3">
+										<div class="cls-known">
+											<img src="images/img3.jpg" alt="no-image">
+										</div>
+										<div class="cls-grove">
+											<h3>Grove to Learn?</h3>
+											<p>grove doesn't stop in school<span>7 EVENTS</span></p>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="cls-learn">
+											<img src="images/img2.jpg" alt="no-image">
+										</div>
+										<div class="cls-little">
+											<h3>little-known treasures</h3>
+											<p>Your's city best-kept secrets<span>11 EVENTS</span></p>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="cls-editor">
+											<img src="images/img1.jpg" alt="no-image">
+										</div>
+										<div class="cls-littlenext">
+											<h3>The Editor Recommended</h3>
+											<p>The best of the best<span>11 EVENTS</span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="row">
+									<div class="col-sm-3">
+										<div class="cls-known">
+											<img src="images/img3.jpg" alt="no-image">
+										</div>
+										<div class="cls-grove">
+											<h3>Grove to Learn?</h3>
+											<p>grove doesn't stop in school<span>7 EVENTS</span></p>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="cls-learn">
+											<img src="images/img2.jpg" alt="no-image">
+										</div>
+										<div class="cls-little">
+											<h3>little-known treasures</h3>
+											<p>Your's city best-kept secrets<span>11 EVENTS</span></p>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="cls-editor">
+											<img src="images/img1.jpg" alt="no-image">
+										</div>
+										<div class="cls-littlenext">
+											<h3>The Editor Recommended</h3>
+											<p>The best of the best<span>11 EVENTS</span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Left and right controls -->
+						<a class="left carousel-control cls-caroselleft" href="#myCarousel3" data-slide="prev">
+							<span class="fa fa-angle-left"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control cls-caroselright" href="#myCarousel3" data-slide="next">
+							<span class="fa fa-angle-right"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+					<button>explore experiences</button>
+				</div>
+			</div>
+		</div>
+		<!-- treasure end  -->
+		<!-- gifts  -->
+		<div class="cls-gifts">
+			<div class="container">
+				<div class="cls-offers">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="cls-gift">
+								<h3>Gifts</h3><span></span>
+								<img src="images/gifts.JPG" alt="no-image">
+								<p>With GiftMyShow cards,you can gift your friends & family movie & play tickets,
+									concert passes, whatever it is the love for their birthdays, anniversaries or simpl
+									for no reason other than how you feel about them. pretty sweet, aint it?</p>
+								<button>Buy a gift card</button>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="cls-gift">
+								<h3>offers</h3><span></span>
+								<img src="images/offers.JPG" alt="no-image">
+								<p class="cls-butoffer1">Delight Yourself with crazy offers while ou book your tickets,
+									Whether its cashback,
+									freebies or discounts you're after,there's a can't-miss bargain for every single one
+									of you</p>
+								<button>view offers</button>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="cls-gift">
+								<h3>Mobile app</h3><span></span>
+								<img src="images/mobile.JPG" alt="no-image">
+								<p class="cls-butoffer2">Book Your tickets on the go , onl with a couple of clicks,
+									Choose from a wgopping
+									3,000+ cinema screens across India and as 20 minutes before showtime for those
+									spur-of-the-moment plans.</p>
+								<button>Download Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- gifts end  -->
+		<!-- actors  -->
+		<div class="cls-fromyour">
+			<div class="container">
+				<div class="cls-honeysingh">
+					<div class="cls-blog">
+						<h3>From our blog<span></span></h3>
+					</div>
+					<div class="cls-bollywood">
+						<div class="row">
+							<div class="cls-actors">
+								<div class="col-sm-4">
+									<div class="cls-yoyo">
+										<div class="cls-actorname">
+											<img src="images/img4.jpg" alt="no-image">
+										</div>
+										<div class="cls-reviewer">
+											<h4>5 South Actors Who took the Farmville routers Act</h4>
+											<h5>Raisa Nasereen</h5><span>BMS Reviewer</span>
+											<p><i class="fa fa-facebook cls-face" aria-hidden="true"></i> 0 <i
+													class="fa fa-twitter cls-twitter" aria-hidden="true"></i> 0 </p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="cls-yoyo">
+										<div class="cls-actorname">
+											<img src="images/img5.jpg" alt="no-image">
+										</div>
+										<div class="cls-reviewer">
+											<h4>When Bollywood stars Left us DumbStruck</h4>
+											<h5>Delnaz Divecha</h5><span>BMS Reviewer</span>
+											<p class="cls-rightactor"><i class="fa fa-facebook cls-face" aria-hidden="true"></i> 0 <i
+													class="fa fa-twitter cls-twitter" aria-hidden="true"></i> 0 </p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="cls-yoyo">
+										<div class="cls-actorname">
+											<img src="images/img6a.jpg" alt="no-image">
+										</div>
+										<div class="cls-reviewer">
+											<h4>What Didn't Know about Honey Singh</h4>
+											<h5>Sonakshi kurbah</h5><span>BMS Reviewer</span>
+											<p class="cls-rightactor"><i class="fa fa-facebook cls-face" aria-hidden="true"></i> 7 <i
+													class="fa fa-twitter cls-twitter" aria-hidden="true"></i> 0 </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- actors end  -->
+		<!-- wallet  -->
+		<div class="cls-click">
+			<div class="container">
+				<div class="cls-flick">
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="cls-wallet">
+								<h1>Select a flick<span>pay with A click</span></h1>
+								<p>with BookMyShow's MyWallet, Paying for your movie and event tickets online is going
+									to be insanely easy. Like, one-click easy.</p>
+								<div class="row">
+									<div class="col-sm-3">
+										<div class="img-area">
+											<img src="images/click.png" alt="no-image">
+											<h4>ONE-CLICK </h4><span>PAYMENT</span>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="img-area">
+											<img src="images/2.png" alt="no-image">
+											<h4>INSTant</h4><span>funds</span>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="img-area">
+											<img src="images/3.png" alt="no-image">
+											<h4>100%</h4><span>safe & secure</span>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="img-area">
+											<img src="images/4.png" alt="no-image">
+											<h4>quicker than</h4><span>third party wallet</span>
+										</div>
+									</div>
+								</div>
+								<button>Activate my wallet</button>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="wallet">
+								<img src="images/wallet.png" alt="no-image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Wallet end  -->
+
+		<!-- footer start  -->
+		<div class="cls-footerarea">
+			<div class="container">
+				<div class="cls-area">
+					<div class="row">
+						<div class="col-sm-4 cls-border">
+							<img src="images/5.png" alt="no-image">
+							<p>24/7 Customer care</p>
+
+						</div>
+						<div class="col-sm-4 cls-border">
+							<img src="images/6.png" alt="no-image">
+							<p>resend booking confitmation</p>
+						</div>
+						<div class="col-sm-4 cls-border2">
+							<img src="images/7.png" alt="no-image">
+							<p>subscribe to the newsletter</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cls-footer2">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="cls-coming">
+							<h5>coming soon</h5>
+							<p>Cute Kammeenna,Dare You,Ennam Pudhu Vannam,Eye in the sky</p>
+							hello
+						</div>
+					</div>
+				</div>
+				<div class="cls-celebrities">
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="cls-genre">
+								<h5>Movie genere</h5>
+								<div class="row">
+									<div class="col-sm-6">
+										<a href="javascript:;" alt="link" title="Action">Action</a>
+										<a href="javascript:;" alt="link" title="Romance">Romance</a>
+										<a href="javascript:;" alt="link" title="comedy">comedy</a>
+										<a href="javascript:;" alt="link" title="adult">adult</a>
+										<a href="javascript:;" alt="link" title="adventure">adventure</a>
+										<a href="javascript:;" alt="link" title="biography">biography</a>
+										<a href="javascript:;" alt="link" title="classic">classic</a>
+										<a href="javascript:;" alt="link" title="crime">crime</a>
+										<a href="javascript:;" alt="link" title="drama">drama</a>
+										<a href="javascript:;" alt="link" title="family">family</a>
+									</div>
+									<div class="col-sm-6">
+										<a href="javascript:;" alt="link" title="fantasy">fantasy</a>
+										<a href="javascript:;" alt="link" title="history">history</a>
+										<a href="javascript:;" alt="link" title="musical">musical</a>
+										<a href="javascript:;" alt="link" title="mystery">mystery</a>
+										<a href="javascript:;" alt="link" title="sci">sci-Fi</a>
+										<a href="javascript:;" alt="link" title="suspense">suspense</a>
+										<a href="javascript:;" alt="link" title="fantasy">fantasy</a>
+										<a href="javascript:;" alt="link" title="Thriller">Thriller</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="cls-latest">
+								<h5>Latest movies</h5>
+								<a href="javascript:;" alt="link" title="showing">Now showing</a>
+								<a href="javascript:;" alt="link" title="coming soon">coming soon</a>
+								<a href="javascript:;" alt="link" title="celebrities">movie celebrities</a>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="cls-reviews">
+								<h5>Movie reviews</h5>
+								<a href="javascript:;" alt="news" title="Entertainment">Entertainment news</a>
+								<a href="javascript:;" alt="news" title="Rajeev">Rajeev Masaand</a>
+								<a href="javascript:;" alt="news" title="newFilms">Film Reviews</a>
+								<a href="javascript:;" alt="news" title="Guest">Guest Blogging</a>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="cls-trailers">
+								<h5>movie trailers</h5>
+								<a href="javascript:;" alt="link" title="showing">Now showing</a>
+								<a href="javascript:;" alt="link" title="coming">coming soon</a>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="cls-trailers">
+								<h5>cinemas & regions</h5>
+								<a href="javascript:;" alt="link" title="All regions">All regions</a>
+								<a href="javascript:;" alt="link" title="cinema chains">cinema chains</a>
+								<a href="javascript:;" alt="link" title="cinemas">cinemas</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cls-app">
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="cls-languages">
+								<h5>movies by language</h5>
+								<a href="javascript:;" alt="link" title="hindi">hindi</a>
+								<a href="javascript:;" alt="link" title="English">English</a>
+								<a href="javascript:;" alt="link" title="marathi">marathi</a>
+								<a href="javascript:;" alt="link" title="bengali">bengali</a>
+								<a href="javascript:;" alt="link" title="Tamil">Tamil</a>
+								<a href="javascript:;" alt="link" title="telugu">telugu</a>
+								<a href="javascript:;" alt="link" title="malayalam">malayalam</a>
+								<a href="javascript:;" alt="link" title="bhojpuri">bhojpuri</a>
+								<a href="javascript:;" alt="link" title="kanada">kanada</a>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="cls-book">
+								<h5>Bookmyshow app</h5>
+								<a href="javascript:;" alt="link" title="iphone">iphone</a>
+								<a href="javascript:;" alt="link" title="Android">Android</a>
+								<a href="javascript:;" alt="link" title="Black berry">Black berry</a>
+								<a href="javascript:;" alt="link" title="windows phone">windows phone</a>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="cls-countries">
+								<h5>countries</h5>
+								<a href="javascript:;" alt="link" title="bangaladesh">bangaladesh</a>
+								<a href="javascript:;" alt="link" title="indonesia">indonesia</a>
+								<a href="javascript:;" alt="link" title="zealand">New zealand</a>
+								<a href="javascript:;" alt="link" title="UAE">UAE</a>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="cls-help">
+								<h5>help</h5>
+								<a href="javascript:;" alt="link" title="sitemap">sitemap</a>
+								<a href="javascript:;" alt="link" title="FAQ">FAQ's</a>
+								<a href="javascript:;" alt="link" title="terms">terms and conditions</a>
+								<a href="javascript:;" alt="link" title="privacy">privacy policy</a>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="cls-help">
+								<h5>bookmyshow News</h5>
+								<a href="javascript:;" alt="link" title="blog">blog</a>
+								<a href="javascript:;" alt="link" title="press">press release</a>
+								<a href="javascript:;" alt="link" title="coverage">press coverage</a>
+								<a href="javascript:;" alt="link" title="public">public relations </a>
+								<a href="javascript:;" alt="link" title="openings">current openings </a>
+								<a href="javascript:;" alt="link" title="contacts">contacts us </a>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="cls-exclusive">
+								<h5>exclusives</h5>
+								<a href="javascript:;" alt="link" title="BookAsmile">BookAsmile</a>
+								<a href="javascript:;" alt="link" title="corporate">corporate vouchers</a>
+								<a href="javascript:;" alt="link" title="cards">gift cards</a>
+								<a href="javascript:;" alt="link" title="Refer my Friend ">Refer my Friend </a>
+								<a href="javascript:;" alt="link" title="reserve your seat">reserve your seat </a>
+								<a href="javascript:;" alt="link" title="contacts us ">contacts us </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="cls-footerimg">
+							<img src="images/footer-end.jpg" alt="no-image">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="cls-icons">
+							<p><a href="javascript:;" title="facebook" class="cls-fb" alt="link"><i class="fa fa-facebook"
+										aria-hidden="true"></i></a>
+								<a href="javascript:;" title="facebook" class="cls-fb" alt="link"><i class="fa fa-twitter"
+										aria-hidden="true"></i></a>
+								<a href="javascript:;" title="facebook" class="cls-fb" alt="link"><i class="fa fa-instagram"
+										aria-hidden="true"></i></a>
+								<a href="javascript:;" title="facebook" class="cls-fb" alt="link"> <i class="fa fa-youtube-play"
+										aria-hidden="true"></i></a>
+								<a href="javascript:;" title="facebook" class="cls-fb" alt="link"><i class="fa fa-pinterest"
+										aria-hidden="true"></i></a>
+								<a href="javascript:;" title="facebook" class="cls-fb" alt="link"> <i
+										class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+								<a href="javascript:;" title="facebook" class="cls-fb" alt="link"> <i class="fa fa-linkedin"
+										aria-hidden="true"></i></a>
+								<span>Copyright  <a href="javascript:;" class="cls-year" alt="link"></a>  <i class="fa fa-copyright"
+										aria-hidden="true"></i>  bigtree
+									entertainment pvt.ltd.All rights reserved.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer end  -->
+		<!-- empty  -->
+		<div class="cls-color">
+		</div>
+		<!-- empty end  -->
+		<button id="scroll" class="scrolltop">Scroll Top <i class="fa fa-angle-up"></i></button>
+	</div>
+	<!-- template end  -->
+</body>
+
+</html>
