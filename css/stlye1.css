@@ -1,0 +1,683 @@
+@font-face {
+  font-family: "roboto-light";
+  src: url("../fonts/roboto-light-webfont.eot");
+  src: url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto-light-webfont.ttf") format("truetype"), url("../fonts/roboto-light-webfont.svg#roboto_lightregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto-thin";
+  src: url("../fonts/roboto-thin-webfont.eot");
+  src: url("../fonts/roboto-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-thin-webfont.woff2") format("woff2"), url("../fonts/roboto-thin-webfont.woff") format("woff"), url("../fonts/roboto-thin-webfont.ttf") format("truetype"), url("../fonts/roboto-thin-webfont.svg#roboto_thinregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Shadows-Into";
+  src: url("../fonts/ShadowsIntoLight.eot");
+  src: url("../fonts/ShadowsIntoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/ShadowsIntoLight.woff2") format("woff2"), url("../fonts/ShadowsIntoLight.woff") format("woff"), url("../fonts/ShadowsIntoLight.ttf") format("truetype"), url("../fonts/ShadowsIntoLight.svg#ShadowsIntoLight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --headerbg: #1f2533;
+  --homebg: #2c313b;
+  --white: white;
+  --blue: blue;
+  --grey: #999999;
+  --bannerbg: #505c2f;
+  --black: black;
+  --red: red;
+  --top: #e9e9e9;
+  --dropdowm: #c02c3a;
+  --moviesbg: #eeeff0;
+  --moviesborder: #d9d8d1;
+  --imgborder: #2c7055;
+  --dancing: "Shadows-Into";
+  --bold: "roboto-thin";
+  --giftpara: #989898;
+  --rose: #f84464;
+  --fb: #3b5998;
+  --green: green;
+  --twitter: #5ea9dd;
+  --footerst: #404043;
+  --footerbg: #333338;
+  --footertxt: #7f7f7f;
+  --footerhead: #a5a5a5;
+  --bordercolor: #e5e5e5;
+  --buttonbg: #130e0e;
+  --cards: #fff1cc;
+  --cardsbor: #ffd564;
+  --viewcl: #dc3556;
+  --lightgrey: #f2f2f2;
+}
+
+body {
+  font-family: "roboto-regular";
+  font-size: 16px;
+  line-height: 24px;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--dropdowm);
+}
+
+.container {
+  width: 1330px;
+  margin: 0px auto;
+}
+
+.cls-navbarcontain {
+  background-color: var(--headerbg);
+  margin: 0px -15px;
+}
+.cls-navbarcontain .cls-navinverse {
+  min-height: unset;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border: none;
+  border-radius: 0px;
+  margin: 0px -30px;
+}
+.cls-navbarcontain .cls-navinverse .cls-navbarbrand {
+  height: unset;
+  padding: 0px 0px 0px 0px;
+}
+.cls-navbarcontain .cls-navinverse .cls-navbarbrand i {
+  background-color: var(--homebg);
+  padding: 12px 10px;
+  font-size: 16px;
+}
+.cls-navbarcontain .cls-navinverse .cls-navleft li a {
+  padding: 10px 10px 10px 6px;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 13px;
+}
+.cls-navbarcontain .cls-navinverse .cls-navleft li a:hover {
+  color: var(--red);
+}
+.cls-navbarcontain .cls-navinverse .cls-btn {
+  padding: 1px 10px 1px 10px;
+  margin: 10px 15px 0px 0px;
+  font-size: 10px;
+  border-radius: 2px;
+}
+.cls-navbarcontain .cls-navinverse .cls-btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--white);
+}
+.cls-navbarcontain .cls-navinverse .navbar-right > li a {
+  padding: 10px 12px 10px 6px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.cls-navbarcontain .cls-navinverse .navbar-right > li a span {
+  padding: 0px 10px;
+  font-size: 15px;
+}
+
+.row {
+  margin: 0px 0px;
+}
+
+.cls-banner {
+  color: var(--white);
+}
+.cls-banner .cls-tamilarasan {
+  background: linear-gradient(to right, rgb(26, 26, 26) 36%, rgba(48, 8, 11, 0)), url("../images/tamil.jpg") no-repeat center/cover;
+  min-height: 480px;
+  margin: 0px -30px;
+  padding: 30px 0px;
+}
+.cls-banner .cls-tamilarasan .cls-cinemas {
+  margin: 0px 0px 0px 30px;
+}
+.cls-banner .cls-tamilarasan .cls-cinemas img {
+  height: 387px;
+}
+.cls-banner .cls-tamilarasan .cls-cinemas span {
+  color: var(--white);
+  background-color: var(--black);
+  text-align: center;
+  font-size: 12px;
+  display: inline-block;
+  padding: 5px 100px;
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-likes {
+  padding: 10px 0px;
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-likes h1 {
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-likes h2 i {
+  color: var(--green);
+  font-size: 24px;
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-likes h2 span {
+  font-size: 16px;
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-interested {
+  border: 1px solid var(--white);
+  padding: 0px 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-interested h4 {
+  font-weight: bold;
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-interested p {
+  font-size: 13px;
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-interested button {
+  color: var(--black);
+  font-size: 14px;
+  position: absolute;
+  right: 11px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  border: 1px solid var(--white);
+  top: 30%;
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-interested button:hover {
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--black);
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-2d button {
+  color: var(--black);
+  margin: 20px 2px 10px;
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-2d button:hover {
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--black);
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-2d h4 {
+  font-size: 16px;
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-2d h4 i {
+  font-size: 6px;
+  padding: 0px 5px;
+  position: relative;
+  top: -4px;
+  padding: 5px 8px;
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-2d .cls-tickets {
+  background-color: var(--rose);
+  color: var(--white);
+  border: 1px solid var(--rose);
+  padding: 13px 60px;
+  border-radius: 10px;
+  margin: 18px 0px;
+}
+.cls-banner .cls-tamilarasan .cls-cinetrailer .cls-2d .cls-tickets:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--white);
+}
+.cls-banner .cls-tamilarasan .cls-imgarea button {
+  background-color: var(--buttonbg);
+  border: 1px solid var(--buttonbg);
+  color: var(--moviesbg);
+  padding: 8px 12px;
+}
+.cls-banner .cls-tamilarasan .cls-imgarea button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--white);
+}
+.cls-banner .cls-tamilarasan .cls-imgarea button i {
+  font-size: 25px;
+  padding: 0px 10px 0px 0px;
+}
+
+.cls-about .cls-container {
+  width: 930px;
+  margin: 0px;
+}
+.cls-about .cls-container .cls-antony h3 {
+  padding: 20px 10px;
+  font-weight: bold;
+}
+.cls-about .cls-container .cls-antony p {
+  border-bottom: 1px solid var(--bordercolor);
+  padding: 0px 0px 30px 0px;
+}
+.cls-about .cls-container .cls-eid {
+  border-bottom: 1px solid var(--bordercolor);
+}
+.cls-about .cls-container .cls-eid .cls-cards {
+  padding: 25px 20px 20px 20px;
+  border: 2px dashed var(--cardsbor);
+  background-color: var(--cards);
+  border-radius: 10px;
+  position: relative;
+  margin: 0px 0px 30px 0px;
+}
+.cls-about .cls-container .cls-eid .cls-cards h4 {
+  font-weight: bold;
+  margin: 0px 0px;
+}
+.cls-about .cls-container .cls-eid .cls-cards h4 img {
+  width: 5%;
+  margin-right: 6px;
+}
+.cls-about .cls-container .cls-eid .cls-cards p {
+  margin: 0px 30px;
+}
+.cls-about .cls-container .cls-right {
+  background-image: none;
+}
+.cls-about .cls-container .cls-right span {
+  position: absolute;
+  background: var(--black);
+  color: var(--white);
+  padding: 8px 26px 9px 15px;
+  border-radius: 20px;
+  font-size: 25px;
+  width: 40px;
+  top: 20px;
+  right: -8px;
+}
+.cls-about .cls-container .cls-actorname {
+  border-bottom: 1px solid var(--bordercolor);
+}
+.cls-about .cls-container .cls-actorname .cls-cast h3 {
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.cls-about .cls-container .cls-actorname .cls-cast .cls-carosel .cls-actors img {
+  width: 100%;
+}
+.cls-about .cls-container .cls-actorname .cls-cast .cls-carosel .cls-actors p {
+  text-align: center;
+  color: var(--black);
+  padding: 10px 0px;
+}
+.cls-about .cls-container .cls-actorname .cls-cast .cls-carosel .cls-actors p span {
+  display: block;
+  color: var(--footerhead);
+  font-size: 14px;
+}
+.cls-about .cls-container .cls-actorname .cls-cast .cls-carosel .cls-control {
+  background-image: none;
+}
+.cls-about .cls-container .cls-actorname .cls-cast .cls-carosel .cls-control span {
+  position: absolute;
+  background: var(--black);
+  color: var(--white);
+  padding: 8px 26px 9px 15px;
+  border-radius: 20px;
+  font-size: 25px;
+  width: 40px;
+  top: 44px;
+  right: -28px;
+}
+.cls-about .cls-container .cls-music {
+  border-bottom: 1px solid var(--bordercolor);
+}
+.cls-about .cls-container .cls-music h3 {
+  padding: 10px 0px;
+  font-weight: bold;
+}
+.cls-about .cls-container .cls-music .cls-director {
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+}
+.cls-about .cls-container .cls-music .cls-director img {
+  width: 100%;
+}
+.cls-about .cls-container .cls-music .cls-director p {
+  font-size: 17px;
+  color: var(--black);
+  padding: 10px;
+}
+.cls-about .cls-container .cls-music .cls-director p span {
+  display: block;
+  color: var(--footertxt);
+  font-size: 14px;
+}
+.cls-about .cls-container .cls-might {
+  padding: 30px 0px;
+}
+.cls-about .cls-container .cls-might .cls-youmight {
+  position: relative;
+}
+.cls-about .cls-container .cls-might .cls-youmight h3 {
+  font-weight: bold;
+}
+.cls-about .cls-container .cls-might a {
+  color: var(--viewcl);
+  text-align: right;
+  text-decoration: none;
+}
+.cls-about .cls-container .cls-might a i {
+  padding: 0px 5px;
+}
+.cls-about .cls-container .cls-might .cls-movies {
+  padding: 10px 0px;
+}
+.cls-about .cls-container .cls-might .cls-movies .cls-ruthuran h5 {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--black);
+  padding: 2px 4px;
+  text-shadow: none;
+}
+.cls-about .cls-container .cls-might .cls-movies .cls-ruthuran img {
+  border-radius: 6px 6px 0px 0px;
+}
+.cls-about .cls-container .cls-might .cls-movies .cls-ruthuran span {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 0px 0px 17px 17px;
+  padding: 7px 27.5px;
+  font-size: 14px;
+}
+.cls-about .cls-container .cls-might .cls-movies .cls-ruthuran span i {
+  color: var(--dropdowm);
+  font-size: 18px;
+  padding: 7px 5px;
+}
+.cls-about .cls-container .cls-might .cls-movies .cls-ruthuran .cls-thumbs {
+  padding: 7px 54.5px;
+}
+.cls-about .cls-container .cls-might .cls-movies .cls-ruthuran .cls-thumbs i {
+  color: var(--green);
+}
+.cls-about .cls-container .cls-might .cls-stye {
+  background-image: none;
+}
+.cls-about .cls-container .cls-might .cls-stye span {
+  font-size: 30px;
+  color: var(--white);
+  background-color: var(--black);
+  padding: 10px 20px;
+  border-radius: 30px;
+  position: absolute;
+  top: 39%;
+  right: 0px;
+}
+.cls-about .cls-container .cls-report {
+  padding: 10px 0px;
+}
+.cls-about .cls-container .cls-report a {
+  color: var(--footerst);
+  font-size: 13px;
+  display: block;
+  text-decoration: none;
+}
+.cls-about .cls-container .cls-report a i {
+  padding: 0px 5px;
+}
+.cls-about .cls-container .cls-report .cls-online {
+  padding: 100px 0px 0px 0px;
+  color: var(--grey);
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.cls-greyy {
+  background-color: var(--lightgrey);
+  padding: 20px 0px;
+  margin: 0px -15px;
+}
+
+.cls-footerarea {
+  background-color: var(--footerst);
+  margin: 0px -15px;
+}
+.cls-footerarea .cls-area {
+  text-align: center;
+}
+.cls-footerarea .cls-area .cls-border,
+.cls-footerarea .cls-area .cls-border2 {
+  border-right: 2px solid var(--footerbg);
+}
+.cls-footerarea .cls-area .cls-border img,
+.cls-footerarea .cls-area .cls-border2 img {
+  min-height: 65px;
+  padding: 8px 0px;
+}
+.cls-footerarea .cls-area .cls-border p,
+.cls-footerarea .cls-area .cls-border2 p {
+  color: var(--grey);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.cls-footerarea .cls-area .cls-border2 {
+  border: none;
+}
+
+.cls-footer2 {
+  background-color: var(--footerbg);
+  margin: 0px -15px;
+  position: relative;
+}
+.cls-footer2 .cls-coming {
+  padding: 20px 0px 0px 0px;
+}
+.cls-footer2 .cls-coming h5 {
+  color: var(--white);
+  text-transform: uppercase;
+}
+.cls-footer2 .cls-coming p {
+  color: var(--footertxt);
+  border-bottom: 1px solid var(--grey);
+  font-size: 13px;
+  padding: 0px 0px 25px 0px;
+}
+.cls-footer2 .cls-celebrities {
+  padding: 0px 0px 30px 0px;
+}
+.cls-footer2 .cls-celebrities .cls-genre h5 {
+  color: var(--footerhead);
+  text-transform: uppercase;
+  padding: 0px 15px;
+}
+.cls-footer2 .cls-celebrities .cls-genre a {
+  display: block;
+  text-transform: capitalize;
+  color: var(--footertxt);
+  font-size: 14px;
+  text-decoration: none;
+  padding: 1px 0px;
+}
+.cls-footer2 .cls-celebrities .cls-genre a:hover {
+  color: var(--white);
+}
+.cls-footer2 .cls-celebrities .cls-latest h5,
+.cls-footer2 .cls-celebrities .cls-reviews h5,
+.cls-footer2 .cls-celebrities .cls-trailers h5 {
+  color: var(--footerhead);
+  text-transform: uppercase;
+  padding: 0px 15px;
+}
+.cls-footer2 .cls-celebrities .cls-latest a,
+.cls-footer2 .cls-celebrities .cls-reviews a,
+.cls-footer2 .cls-celebrities .cls-trailers a {
+  display: block;
+  text-transform: capitalize;
+  color: var(--footertxt);
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0px 15px;
+}
+.cls-footer2 .cls-celebrities .cls-latest a:hover,
+.cls-footer2 .cls-celebrities .cls-reviews a:hover,
+.cls-footer2 .cls-celebrities .cls-trailers a:hover {
+  color: var(--white);
+}
+.cls-footer2 .cls-app {
+  padding: 0px 0px 30px 0px;
+  border-bottom: 1px solid var(--footerhead);
+}
+.cls-footer2 .cls-app .cls-languages h5,
+.cls-footer2 .cls-app .cls-book h5,
+.cls-footer2 .cls-app .cls-countries h5,
+.cls-footer2 .cls-app .cls-help h5,
+.cls-footer2 .cls-app .cls-exclusive h5 {
+  color: var(--footerhead);
+  text-transform: uppercase;
+  padding: 0px 15px;
+}
+.cls-footer2 .cls-app .cls-languages a,
+.cls-footer2 .cls-app .cls-book a,
+.cls-footer2 .cls-app .cls-countries a,
+.cls-footer2 .cls-app .cls-help a,
+.cls-footer2 .cls-app .cls-exclusive a {
+  display: block;
+  text-transform: capitalize;
+  color: var(--footertxt);
+  font-size: 14px;
+  text-decoration: none;
+  padding: 1px 0px;
+  padding: 0px 15px;
+}
+.cls-footer2 .cls-app .cls-languages a:hover,
+.cls-footer2 .cls-app .cls-book a:hover,
+.cls-footer2 .cls-app .cls-countries a:hover,
+.cls-footer2 .cls-app .cls-help a:hover,
+.cls-footer2 .cls-app .cls-exclusive a:hover {
+  color: var(--white);
+}
+.cls-footer2 .cls-footerimg img {
+  position: absolute;
+  bottom: -20px;
+  width: 16%;
+  right: 43%;
+}
+.cls-footer2 .cls-footerimg p {
+  padding: 50px;
+}
+.cls-footer2 .cls-icons p {
+  text-align: center;
+  padding: 55px 0px;
+}
+.cls-footer2 .cls-icons p i {
+  background-color: var(--footertxt);
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 0px 5px;
+  width: 35px;
+}
+.cls-footer2 .cls-icons p i:hover {
+  background-color: var(--white);
+  color: var(--fb);
+  border-color: var(--white);
+}
+.cls-footer2 .cls-icons p span {
+  display: block;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--footertxt);
+  font-size: 11px;
+  padding: 4px 0px;
+}
+.cls-footer2 .cls-icons p span .fa-copyright {
+  background-color: var(--footerbg);
+  font-size: 10px;
+  padding: unset;
+}
+
+.cls-get .cls-started {
+  text-align: center;
+  border: 1px solid var(--black);
+}
+.cls-get .cls-started h2 {
+  padding: 10px 20px;
+  position: relative;
+  text-align: left;
+}
+.cls-get .cls-started h2 span {
+  margin: 0% 31% 0% 20%;
+}
+.cls-get .cls-started button {
+  display: block;
+  width: 100%;
+  margin: 25px 0px;
+  padding: 10px 10px;
+  background-color: var(--white);
+  color: var(--footerst);
+  border: 1px solid var(--grey);
+}
+.cls-get .cls-started button i {
+  position: absolute;
+  left: 40px;
+  font-size: 18px;
+  color: var(--black);
+}
+.cls-get .cls-started p {
+  font-size: 18px;
+}
+.cls-get .cls--india {
+  padding: 30px 0px 0px 0px;
+}
+.cls-get .cls--india span img {
+  width: 10%;
+}
+.cls-get .cls--india span input {
+  border: none;
+  border-bottom: 1px solid var(--bordercolor);
+  width: 60%;
+}
+.cls-get .cls--india p {
+  padding: 100px 0px 10px 0px;
+  font-size: 12px;
+}
+.cls-get .cls--india p a {
+  color: var(--footerst);
+  text-decoration: underline;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  .cls-navbarcontain {
+    margin: 0px 0px;
+  }
+  .cls-navbarcontain .cls-container .cls-navinverse {
+    margin: 0px -30px;
+  }
+  .cls-banner .cls-tamilarasan .cls-cinetrailer .cls-interested button {
+    top: 10%;
+  }
+  .cls-about .cls-container {
+    width: 100%;
+  }
+  .cls-about .cls-container .cls-right span {
+    top: 83px;
+  }
+  .cls-about .cls-container .cls-eid .cls-cards {
+    padding: 20px 2px;
+  }
+  .cls-about .cls-container .cls-eid .cls-cards h4 {
+    font-size: 14px;
+  }
+  .cls-about .cls-container .cls-eid .cls-cards h4 img {
+    width: 9%;
+  }
+  .cls-footer2 .cls-footerimg img {
+    position: absolute;
+    bottom: -16px;
+    width: 46%;
+    right: 29%;
+  }
+}/*# sourceMappingURL=stlye1.css.map */
